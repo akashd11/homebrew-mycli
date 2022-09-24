@@ -8,6 +8,17 @@ class Toolkit < Formula
   url "https://github.com/akashd11/toolkit/archive/refs/tags/v1.3.tar.gz"
   sha256 "f2388545d9050e417f3da514032b83fe9ea6f30921d097fcdc48dbd2ec4aa6b7"
 
+  livecheck do
+    url :stable
+  end
+
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "708a02986b8541ace4d206cb755d94044a2e1b1249de74832c552893fef6ec24" => :catalina
+    sha256 "58059c69cd889bb677f6549d5a48052a59eaf714e286b80ae9ce8dfe2ab93a8a" => :mojave
+    sha256 "357a8b2b3bdf9efdb62e337317fe141f87138e8dd4aea923129c6cdc912e19dc" => :high_sierra
+  end
+
   depends_on "python@3.10"
 
   resource "click" do
