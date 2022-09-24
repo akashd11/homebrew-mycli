@@ -12,6 +12,8 @@ class Toolkit < Formula
     url :stable
   end
 
+  bottle :unneeded
+
   depends_on "python@3.10"
 
   resource "click" do
