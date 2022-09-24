@@ -5,8 +5,8 @@ class Toolkit < Formula
   include Language::Python::Virtualenv
   desc "testing cli"
   homepage "https://github.com/akashd11/toolkit"
-  url "https://github.com/akashd11/toolkit/archive/refs/tags/v1.2.tar.gz"
-  sha256 "1dc834578c58244638e09b4562f8a506027f4d6bf2d61152d4f8b8a9cb521a85"
+  url "https://github.com/akashd11/toolkit/archive/refs/tags/v1.3.tar.gz"
+  sha256 "f2388545d9050e417f3da514032b83fe9ea6f30921d097fcdc48dbd2ec4aa6b7"
 
   depends_on "python@3.10"
 
