@@ -1,20 +1,14 @@
 # Documentation: https://docs.brew.sh/Formula-Cookbook
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
-class Toolkit < Formula
+class Mycli < Formula
   include Language::Python::Virtualenv
   desc "testing cli"
-  homepage "https://github.com/akashd11/toolkit"
-  url "https://github.com/akashd11/toolkit/archive/refs/tags/v1.3.tar.gz"
-  sha256 "f2388545d9050e417f3da514032b83fe9ea6f30921d097fcdc48dbd2ec4aa6b7"
+  homepage "https://github.com/akashd11/mycli"
+  url "https://github.com/akashd11/mycli/archive/refs/tags/v1.4.tar.gz"
+  sha256 "d2a8b53fd797908273858dde8d0b94bcbb5385df448be0c25fd3da30f853320d"
 
-  livecheck do
-    url :stable
-  end
-
-  bottle :unneeded
-
-  depends_on "python@3.10"
+  depends_on "python@3.9"
 
   resource "click" do
     url "https://files.pythonhosted.org/packages/27/6f/be940c8b1f1d69daceeb0032fee6c34d7bd70e3e649ccac0951500b4720e/click-7.1.2.tar.gz"
